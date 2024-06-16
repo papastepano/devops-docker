@@ -12,13 +12,3 @@ ENTRYPOINT ["/usr/local/bin/yt-dlp"]
 
 # define a default argument
 CMD ["https://www.youtube.com/watch?v=Aa55RKWZxxI"]
-
-
-# make sure you have ubuntu image
-# docker pull ubuntu:22.04
-
-# build the image
-# docker build -t yt-dlp .
-
-# run the container overriding the default argument
-# docker run -v "$(pwd):/mydir" yt-dlp <YOUTUBE_URL>
